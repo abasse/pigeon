@@ -1,4 +1,4 @@
-const assert = require('assert');
+//const assert = require('assert');
 const diff = require('./diff');
 const patch = require('./patch');
 const reverse = require('./reverse');
@@ -139,8 +139,8 @@ class AutoPigeon {
 
   static change(doc, fn) {
 
-    assert(doc instanceof AutoPigeon);
-    assert(fn instanceof Function);
+    //assert(doc instanceof AutoPigeon);
+    //assert(fn instanceof Function);
 
     const tmp = _clone(doc);
     fn(tmp);
